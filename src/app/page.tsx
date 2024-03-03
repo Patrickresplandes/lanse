@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <>
- <div>
+ <div className="w-full">
         <Header />
       </div>
       <div className="flex justify-center">
