@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 interface CarouselProps {
@@ -20,7 +21,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   return (
     <div className="relative w-full h-96 overflow-hidden">
       {imageNames.map((image, index) => (
-        <img
+        <Image
           key={index}
           src={`${image}.png`}
           alt={`Carousel Image ${index + 1}`}
