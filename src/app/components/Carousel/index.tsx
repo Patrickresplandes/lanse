@@ -21,7 +21,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   return (
     <div className="relative w-full h-96 overflow-hidden">
       {imageNames.map((image, index) => (
-        <Image
+        <img
           key={index}
           src={`${image}.png`}
           alt={`Carousel Image ${index + 1}`}
