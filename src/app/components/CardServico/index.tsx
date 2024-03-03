@@ -24,14 +24,14 @@ export default function CardServico() {
 
   useEffect(() => {
     const handleResize = () => {
-      setShowArrows(window.innerWidth > 400);
+      setShowArrows(window.innerWidth > 390);
     };
 
     // Adiciona um ouvinte de evento de redimensionamento da janela
     window.addEventListener("resize", handleResize);
 
     // Inicializa o estado de exibição de acordo com a largura inicial da tela
-    setShowArrows(window.innerWidth > 400);
+    setShowArrows(window.innerWidth > 390);
 
     // Remove o ouvinte de evento ao desmontar o componente
     return () => {
